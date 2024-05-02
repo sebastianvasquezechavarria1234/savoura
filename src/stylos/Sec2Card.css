@@ -1,0 +1,64 @@
+
+
+.sec__2__card{
+    width: calc(50% - 10px);
+    /* border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.111); */
+    border: 1px solid #3333332d;
+    background-color: white;
+    overflow: hidden;
+}
+
+.sec__2__card__bg{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/sec2bg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sec__2__card:nth-child(3) .sec__2__card__bg{
+    background-image: url(../img/sec2bg2.jpg);
+}
+
+.sec__2__card__body{
+    padding: 40px;
+}
+
+.sec__2__card__body a,
+.sec__2__tt a,
+.sec__3__card__tt a{
+    position: relative;
+    display: inline-flex;
+    color: var(--green);
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.sec__2__card__body a::before,
+.sec__2__tt a::before,
+.sec__3__card__tt a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    bottom: 1px;
+    transition: all .3s;
+}
+
+.sec__2__card__body a:hover::before,
+.sec__2__tt a:hover::before,
+.sec__3__card__tt a:hover::before{
+    transform: translateX(-100%);
+}
+
+@media screen and (max-width: 800px){
+    .sec__2__card{
+        width: 100%;
+    }
+    .sec__2__card__bg{
+        height: 50vw;
+    }
+    
+}

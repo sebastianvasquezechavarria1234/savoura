@@ -1,0 +1,57 @@
+
+
+.sec__4__card{
+    width: 33%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/sec-4-1.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all .3s;
+}
+
+.sec__4__card:nth-child(2){
+    background-image: url(../img/sec-4-2.jpg);
+}
+
+.sec__4__card:nth-child(3){
+    background-image: url(../img/sec-4-3.jpg);
+}
+
+.sec__4__card__circle{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.sec__4__card__circle::before{
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
+@media screen and (max-width: 900px){
+    .sec__4__card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .sec__4__card__circle{
+        width: 60vw;
+        height: 60vw;
+    }
+}

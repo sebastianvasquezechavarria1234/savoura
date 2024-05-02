@@ -1,0 +1,9 @@
+
+
+.MnResponsive{
+    background-color: var(--blue-light);
+    position: fixed;
+    right: 20px;
+    top: 120px;
+    z-index: 50;
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+:root{
+  --green: #009364;
+  --red: #dc3545;
+  --blue-light: #e9f5ef; 
+  --gray-dark: #343a40;
+}
+
+body{
+  height: 400vh;
+  color: #333;
+  background-color: var(--blue-light);
+}
+
+body h1{
+  font-size: 4rem;
+  white-space: -5px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+body h2{
+  font-size: 2.3rem;
+  line-height: 35px;
+  white-space: -10px;
+  margin-bottom: 20px;
+}
+
+body h3{
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+body p,
+body a{
+  color: currentColor;
+  opacity: .8;
+  font-size: 19px;
+}
+
+body p{
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px){
+  body h1{
+    font-size: 2rem;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  body h2{
+    font-size: 1.3rem;
+    line-height: 20px;
+  }
+  body p,
+  body a{
+    font-size: 16px;
+  }
+}
+
+.sec__max__width{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}

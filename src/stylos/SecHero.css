@@ -1,0 +1,39 @@
+
+.hero{
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.727), rgb(0, 0, 0)), url(../img/hero.jpg);
+    background-size: cover;
+   
+}
+
+.hero h1{
+    position: relative;
+    padding: 150px 20px;
+    color: white;
+    text-align: center;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 100px;
+    text-shadow: 3px 3px 3px black;
+}
+
+.hero h1::before{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 70%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: currentColor;
+}
+
+@media screen and (max-width: 600px){
+    .hero h1{
+        margin: 0 0 0 20px;
+    }
+    
+}

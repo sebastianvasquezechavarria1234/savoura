@@ -1,0 +1,15 @@
+
+
+footer{
+    padding: 120px 0px;
+    margin-top: 120px;
+    background-color: #333;
+    color: white;
+}
+
+footer .sec__max__width{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: start;
+}

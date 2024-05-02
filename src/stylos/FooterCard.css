@@ -1,0 +1,25 @@
+
+
+.footer__card{
+   width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__card a{
+    display: block;
+    padding: 10px 0px;
+    transition: all .2s;
+}
+
+.footer__card a:hover{
+    text-decoration: underline;
+    transform: translateX(5px);
+}
+
+@media screen and (max-width: 600px){
+    .footer__card{
+        width: 50%;
+    }
+    
+}

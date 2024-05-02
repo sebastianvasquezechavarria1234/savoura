@@ -1,0 +1,40 @@
+
+
+.sec__3{
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sec__3__card__top{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.sec__3__card__top__bg{
+    width: 50%;
+    height: 400px;
+   background-image: url(../img/sec3CardTop.png);
+   background-size: cover;
+   background-position: center;  
+}
+
+.sec__3__card__tt{
+    width: 50%;
+}
+
+.sec__3__card__tt a{
+    color: var(--red);
+}
+
+@media screen and (max-width: 700px){
+    .sec__3__card__top{
+        flex-direction: column;
+    }
+    .sec__3__card__top__bg,
+    .sec__3__card__tt{
+        width: 100%;
+    }
+    
+}
